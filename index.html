@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cartão Pessoal (PWA) </title>
-    
+
+
+
+    <!-- Associar um arquivo de manifest página HTML  -->
+    <link rel="stylesheet" href="manifest.webmanifest">
+
+    <!-- Controla a maneira como o navegador renderiza o conteudo em app moveis -->
+    <meta name="viewport" content="vidth=device-width, initial-scale=1.0">
+
+    <!-- Definir a cor do tema de um site em dispositivos moveis com android -->
+    <meta name="thema-color" content="white">
+
+    <!-- Chama o javascript principal -->
+    <script src="./script/main.js"></script>
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +33,10 @@
     <header class="box">
         <style>
             body {
+                background-image: url('./img/chuva.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
                 display: flex;
                 justify-content: center;
                 margin-top: 50px;
