@@ -20,7 +20,7 @@ self.addEventListener('instal',event =>{
 
 //Utuliza os arquivos do cache quando estiver offline 
 self.addEventListener('fetch', Event => {
-    Event.respondwitch(
+    Event.respondWith(
         caches.match( Event.request).then(response => {
            return response || fetch(Event.request);
         })
